@@ -3,7 +3,7 @@ import { AuthGuard } from "./AuthGuard";
 import { Login } from "../view/pages/Login";
 import { Dashboard } from "../view/pages/Dashboard";
 import { Register } from "../view/pages/Register";
-import { AuthLayout } from "../view/pages/layouts/AuthLayout";
+import { AuthLayout } from "../view/layouts/AuthLayout";
 
 export function Router() {
   return (
