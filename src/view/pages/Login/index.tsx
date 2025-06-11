@@ -28,9 +28,19 @@ export function Login() {
         action=""
         className="mt-[60px] flex flex-col gap-4"
       >
-        <Input type="email" placeholder="E-mail" {...register("email")} />
+        <Input
+          type="email"
+          placeholder="E-mail"
+          {...register("email")}
+          error={errors.email?.message}
+        />
         {errors.email && <span>{errors.email.message}</span>}
-        <Input type="password" placeholder="Senha" {...register("password")} />
+        <Input
+          type="password"
+          placeholder="Senha"
+          {...register("password")}
+          error={errors.password?.message}
+        />
         {errors.password && <span>{errors.password.message}</span>}
         <Button type="submit" className="mt-2">
           Entrar
